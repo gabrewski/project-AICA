@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" async src = "script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="img\rect6.png">
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="titulo">
+                <h1>Cadastro de usuário</h1>
+                <h3>Portal digital AICA</h3>
+            </div>
+
+            <div class="toggle">
+                <i class="fa-solid fa-toggle-off"></i>
+                <input type="submit" class="invisiblebutton sobrepor" id="falseTogg" name="falseTogg">
+            </div>
+        </div>
+
+        <div class="instrucao">
+            <p>Passe o mouse sobre </p> <i class="fa-solid fa-circle-question"></i> <p> para ver mais informações</p>
+        </div>
+
+        <div class="formulario">
+            <div progressbar>
+            </div>
+
+            <div class="line">
+                <label class="label" for="falseName">Crie um usuário</label>
+
+                <input class="input invisiblefont" id="falseName" name="falseName"> 
+                
+                <div class="tooltip">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <p class="tooltiptext">O nome de usuário identifica seu perfil, seu usuário será usado para entrar na sua conta.</p>
+                </div>
+            </div>
+
+            <div class="line">
+                <label class="label" for="password">Crie uma senha</label> 
+
+                <div class="input">
+                    <input type="password" class="inputReset" id="falsePass" name="falsePass">
+
+                    <div class="eye" onclick="visiblePass()">
+                        <i class="fa-solid fa-eye-slash" id="closedeye"></i>
+                    </div>
+                </div>
+
+                <div class="tooltip">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <p class="tooltiptext">A senha é uma informação confidencial que será usada para entrar na sua conta.<br> Você poderá trocar de senha depois.</p>
+
+                </div>
+            </div>
+
+            <div class="detalhe">
+                <p>a senha deve ter pelo menos 8 caracteres, sendo: <br>uma letra maiúscula, uma letra minúscula, um caractere especial e um número.</p>
+            </div>
+
+            <div class="checkbox">
+                <input type="text" id="falseCheckbox" name="falseCheckbox"> <p class="aceite">Li e concordo com os <a href="">Termos de Uso</a> e <a href=""> Política de Privacidade</a></p>
+            </div>
+        </div>
+            <button id="botaoAnda">Próximo</button>
+
+    </div>
+</body>
+<footer>
+
+</footer>
